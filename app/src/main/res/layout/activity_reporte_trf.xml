@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".reporteTrf"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#E8000000">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,6 +18,7 @@
             android:text="Reporte de Transferencias"
             android:textSize="18dp"
             android:textStyle="bold"
+            android:textColor="#8C7608"
             android:gravity="center_horizontal"/>
 
     </LinearLayout>
@@ -34,7 +36,8 @@
             android:layout_marginLeft="20dp"
             android:text="Regresar"
             android:textAllCaps="false"
-            android:layout_gravity="right"/>
+            android:layout_gravity="right"
+            android:backgroundTint="#8C7608"/>
 
         <Button
             android:id="@+id/btncerrarsesion_rep"
@@ -43,7 +46,8 @@
             android:layout_marginLeft="90dp"
             android:text="Cerrar Sesión"
             android:textAllCaps="false"
-            android:layout_gravity="right"/>
+            android:layout_gravity="right"
+            android:backgroundTint="#8C7608"/>
 
     </LinearLayout>
 

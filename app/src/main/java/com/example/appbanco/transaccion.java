@@ -107,7 +107,8 @@ public class transaccion extends AppCompatActivity {
                     cuentadest.setText("");
                     valor.setText("");
                     hora.setText("");
-                    fecha.setText("");
+                    fecha.setText(date);
+                    saldo.setText(getIntent().getStringExtra("saldo"));
                     cuentadest.requestFocus();
                 }
                 else{
