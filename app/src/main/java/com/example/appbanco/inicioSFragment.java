@@ -52,7 +52,7 @@ public class inicioSFragment extends Fragment implements Response.Listener<JSONO
     }
 
     private void iniciarsesion() {
-        String url = "http://192.168.1.73/servicioswebbanco/buscarCliente.php?usuario="+usuario.getText().toString()+"&contrasena="+clave.getText().toString();
+        String url = "http://10.10.11.211/servicioswebbanco/buscarCliente.php?usuario="+usuario.getText().toString()+"&contrasena="+clave.getText().toString();
         jrq = new JsonObjectRequest(Request.Method.GET,url,null,this,this);
         rq.add(jrq);
     }

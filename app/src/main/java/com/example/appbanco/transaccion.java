@@ -98,7 +98,7 @@ public class transaccion extends AppCompatActivity {
 
     private void transferir(String mcuentadest, String mvalor) {
         //Toast.makeText(this, "Hecho", Toast.LENGTH_SHORT).show();
-        String url = "http://192.168.1.73/servicioswebbanco/agregarTrf.php";
+        String url = "http://10.10.11.211/servicioswebbanco/agregarTrf.php";
         StringRequest postRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -110,6 +110,9 @@ public class transaccion extends AppCompatActivity {
                     fecha.setText(date);
                     saldo.setText(getIntent().getStringExtra("saldo"));
                     cuentadest.requestFocus();
+                }
+                else if(response.equals("2")){
+                    Toast.makeText(transaccion.this, "Saldo insuficiente", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     Toast.makeText(transaccion.this, "La cuenta de destino no existe", Toast.LENGTH_SHORT).show();

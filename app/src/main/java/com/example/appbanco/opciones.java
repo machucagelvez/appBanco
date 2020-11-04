@@ -73,7 +73,7 @@ public class opciones extends AppCompatActivity implements Response.Listener<JSO
     }
 
     private void tranferir() {
-        String url = "http://192.168.1.73/servicioswebbanco/buscarCuenta.php?usuario="+user;
+        String url = "http://10.10.11.211/servicioswebbanco/buscarCuenta.php?usuario="+user;
         jrq = new JsonObjectRequest(Request.Method.GET,url,null,this,this);
         rq.add(jrq);
     }
